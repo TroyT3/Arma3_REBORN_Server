@@ -37,14 +37,15 @@
 /mpmissions/*             # close everything under mpmissions
 !/mpmissions/Exile.Esseker/
 
-
-
 /@BSF_WORK/addons/BSF_Ammo/
 /@BSF_WORK/addons/BSF_Buildings/
 /@BSF_WORK/addons/BSF_Gnat/
 /@BSF_WORK/addons/BSF_Misc/
 /@Exile/addons/exile_assets/
-/@ExileServer/addons/exad_dv/
+/@ExileServer/addons/!A Backups/
+
+# git rm -r --cached "path\to\folder"
+
 
 
 # ───────────────
