@@ -7,10 +7,8 @@
 !/@A3XAI/
 !/@A3XAI/addons/
 !/@BSF_WORK/
-!/@BSF_WORK/addons/
 !/@Exile/
 !/@Exile/addons/
-/@Exile/addons/*          # close everything under addons
 !/@Exile/addons/exile_client/
 !/@ExileServer/
 !/@ExileServer/addons/
@@ -27,14 +25,12 @@
 !/@EXTDB3/
 !/@infiSTAR_Exile/
 !/@infiSTAR_Exile/addons/
-/@infiSTAR_Exile/addons/* # close everything under addons
 !/@infiSTAR_Exile/addons/a3_infiSTAR_Exile/
 !/@infiSTAR_Exile/addons/infiSTAR_TM/
 !/A3Master/
 !/battleye/
 !/keys/
 !/mpmissions/
-/mpmissions/*             # close everything under mpmissions
 !/mpmissions/Exile.Esseker/
 
 /@BSF_WORK/addons/BSF_Ammo/
@@ -49,7 +45,8 @@
 
 # git rm -r --cached "path\to\folder"
 
-# git rm -r --cached "mpmissions/BACKUPS"
+# git rm -r --cached "@BSF_WORK/Addons/BSF_Client/BSF_Community_Addon/addons/BSF_Client"
+
 
 # ───────────────
 # 🚫 Ignore file types you don't want tracked, even inside whitelisted dirs
