@@ -43,8 +43,6 @@
 /mpmissions/Scripts/
 
 
-# git rm -r --cached "path\to\folder"
-
 # git rm -r --cached "@BSF_WORK/Addons/BSF_Client/BSF_Community_Addon/addons/BSF_Client"
 
 
