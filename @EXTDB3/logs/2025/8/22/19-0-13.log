@@ -1,0 +1,30 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 32 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[19:00:13:770409 -07:00] [Thread 51396] extDB3: Locked
+[19:00:22:130732 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[19:00:26:331541 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[19:00:30:492229 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[19:00:34:604218 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[19:00:38:809300 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[19:00:42:988524 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[19:00:47:415429 -07:00] [Thread 51396] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile

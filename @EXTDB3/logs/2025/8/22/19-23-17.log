@@ -1,0 +1,31 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 32 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[19:23:18:171070 -07:00] [Thread 38260] extDB3: LOG: Error: Failed opening file D:\Exile_Servers\ExileServerREBORN\ArmA3\@ExtDB3\logs\2025\8\22\Exile_TradingLog.log for writing: Permission denied
+[19:23:18:175738 -07:00] [Thread 38260] extDB3: Failed to Load Protocol: LOG
+[19:23:18:262690 -07:00] [Thread 38260] extDB3: LOG: Error: Failed opening file D:\Exile_Servers\ExileServerREBORN\ArmA3\@ExtDB3\logs\2025\8\22\Exile_DeathLog.log for writing: Permission denied
+[19:23:18:262729 -07:00] [Thread 38260] extDB3: Failed to Load Protocol: LOG
+[19:23:18:339966 -07:00] [Thread 38260] extDB3: LOG: Error: Failed opening file D:\Exile_Servers\ExileServerREBORN\ArmA3\@ExtDB3\logs\2025\8\22\Exile_TerritoryLog.log for writing: Permission denied
+[19:23:18:339994 -07:00] [Thread 38260] extDB3: Failed to Load Protocol: LOG
+[19:23:18:340020 -07:00] [Thread 38260] extDB3: Locked
+[19:23:41:045992 -07:00] [Thread 45200] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF5' for key 'PRIMARY'
+[19:23:41:046031 -07:00] [Thread 45200] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF5:1:["30Rnd_762x39_AK12_Mag_F"]:1750:BSF_Server

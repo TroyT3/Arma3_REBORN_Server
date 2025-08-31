@@ -1,0 +1,4 @@
+//<'DMS.pbo' properties via Mikero's dos tools, dll version 9.98>
+prefix=x\addons\DMS;
+//PboType=Arma Addon;
+//</properties>

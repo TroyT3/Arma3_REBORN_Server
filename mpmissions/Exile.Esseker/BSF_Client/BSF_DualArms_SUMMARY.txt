@@ -1,0 +1,75 @@
+BSF Dual Arms (Two Primaries without CBA) — Summary
+
+Overview
+- Adds a client-only second primary via a “slung” slot stored on the player and synced to all clients.
+- Provides scroll-wheel actions to sling, swap, and drop the slung weapon.
+- Adds a keybind: actionKeys "User6" toggles sling/swap on foot.
+- Shows the slung weapon on the player’s back using a simpleObject proxy (visible to all clients).
+
+Key Integration Points
+- Key handler: Overrides/ExileClient_gui_hud_event_onKeyDown.sqf handles actionKeys "User6".
+- Bootstrap: BSF_Client/bootstrap/fn_postInit.sqf compiles and spawns DualArms code.
+  - Spawns: BSF_Client_DualArms_Init and BSF_Client_DualArms_WorldProxyUpdater.
+- All created files use the requested © 2025 header style.
+
+Created Files
+- BSF_Client/code/BSF_Client_DualArms_Init.sqf
+  - Adds actions, death cleanup, respawn re-init, vehicle visibility handlers, and initial proxy sync.
+- BSF_Client/code/BSF_Client_DualArms_StorePrimary.sqf
+  - Moves current primary from unit loadout to a slung slot (player variable) and updates proxy. Public variable for sync.
+- BSF_Client/code/BSF_Client_DualArms_Swap.sqf
+  - Swaps primary <-> slung in unit loadout and updates proxy. Public variable for sync.
+- BSF_Client/code/BSF_Client_DualArms_RemoveSecondary.sqf
+  - Drops slung weapon to ground, clears state, and removes proxy. Public variable for sync.
+- BSF_Client/code/BSF_Client_DualArms_UpdateProxy.sqf
+  - Creates/attaches the on-back proxy for the local player; used after store/swap/remove and on init.
+- BSF_Client/code/BSF_Client_DualArms_WorldProxyUpdater.sqf
+  - 1s loop that maintains on-back proxies for all other players based on their public slung state.
+
+Existing Files Changed
+- Overrides/ExileClient_gui_hud_event_onKeyDown.sqf
+  - Adds handling for actionKeys "User6" to toggle sling/swap (compiles functions on demand if needed).
+- BSF_Client/bootstrap/fn_postInit.sqf
+  - Compiles all DualArms functions and spawns Init + WorldProxyUpdater.
+
+Runtime Behavior
+- Sling: Stores full primary weapon loadout array using getUnitLoadout/select 0 and clears primary with setUnitLoadout.
+- Swap: Exchanges current primary and slung arrays, preserving attachments/mag state.
+- Drop: Drops weapon (class only) via GroundWeaponHolder; slung cleared.
+- Death: Drops slung weapon and clears slung state; proxies cleaned.
+- Vehicles: Proxies hidden while in vehicle, shown on foot.
+
+Variables
+- player getVariable ["BSF_DA_secondary", []] — array of weapon loadout for slung weapon. Public variable (true) on changes.
+- player getVariable ["BSF_DA_proxy", objNull] — local client-only proxy for own slung weapon.
+- unit getVariable ["BSF_DA_proxy_remote", objNull] — proxy shown on other players.
+- Flags: BSF_DA_actionsAdded, BSF_DA_respawnEH, BSF_DA_ehIn, BSF_DA_ehOut.
+
+Known Limits / Notes
+- Launcher slot: This approach does not actually occupy the launcher slot; it provides a second primary and quick swap without CBA/config patches.
+- Attachments on drop: The drop action currently drops only the weapon class (no attachments/mags). Attachments remain in the stored slung array until swapped back. We can extend drop to spawn attachments if desired.
+- Proxy model: Uses CfgWeapons model path; some mods may use unusual models and need offset/orientation tuning.
+- Performance: WorldProxyUpdater loops every 1s over allPlayers; this is inexpensive but can be tuned or event-driven later.
+- BattlEye: If BE filters kick for createSimpleObject/attachTo/hideObject, add minimal exceptions.
+
+Testing Steps
+1) Join on foot, pick a rifle, bind User Action 6 in Controls.
+2) Press User6: “Primary slung on back” and see a back-mounted model.
+3) Press User6 again: swaps to the slung weapon.
+4) Use scroll actions to drop slung; observe ground holder contains the weapon.
+5) Enter/exit vehicles; proxy hides in vehicle and shows again on foot.
+6) Die; slung weapon drops; no duplicates; proxies clean up.
+7) Have a second client observe your back model slung/un-slung.
+
+Open Items / Next Steps (optional)
+- Header hygiene: BSF_Client_DualArms_Init.sqf still has an older 2023 header a few lines below the new 2025 header. We can remove the older block for consistency.
+- Back placement: Adjust offsets/rotation for better visual alignment across weapon families.
+- Drop with attachments: Extend the drop action to spawn optics, muzzle devices, pointers, magazines from the slung array.
+- Keybind UX: Add a brief HUD hint when User6 toggles sling/swap, and/or allow binding through a small in-mission settings dialog.
+- Safezone rules: If you want to restrict sling/swap in safezones, add checks to the action conditions and key handler.
+
+Rollback
+- Remove the DualArms_* .sqf files from BSF_Client/code.
+- Revert the additions in BSF_Client/bootstrap/fn_postInit.sqf.
+- Revert the actionKeys "User6" block in Overrides/ExileClient_gui_hud_event_onKeyDown.sqf.
+

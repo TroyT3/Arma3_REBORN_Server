@@ -1,0 +1,40 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 32 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[18:53:15:467799 -07:00] [Thread 39084] extDB3: Locked
+[18:53:24:596117 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:29:439719 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:34:486197 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:39:404261 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:43:936786 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:48:567633 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:53:105902 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:53:58:020449 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:02:626346 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:07:055388 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:11:639992 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:16:164047 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:20:932044 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:25:641115 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:30:259239 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:34:939119 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile
+[18:54:39:443173 -07:00] [Thread 39084] extDB3: Error Invalid Format: 9:ADD_DATABASE:exile

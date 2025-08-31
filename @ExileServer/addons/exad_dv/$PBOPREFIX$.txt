@@ -1,0 +1,4 @@
+//<'exad_dv.pbo' properties via Mikero's dos tools, dll version 8.12>
+prefix=exad_dv;
+//PboType=Arma Addon;
+//</properties>

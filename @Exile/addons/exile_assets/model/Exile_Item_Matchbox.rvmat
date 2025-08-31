@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: model\Exile_Item_Matchbox.rvmat
+//Produced from mikero's Dos Tools Dll version 9.36
+//https://mikero.bytex.digital/Downloads
+//'now' is Tue Feb 27 09:30:39 2024 : 'file' last modified on Sun Mar 04 11:17:38 2018
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.6,0.6,0.6,1};
+diffuse[] = {0.6,0.6,0.6,1};
+forcedDiffuse[] = {0,0,0,1};
+emmisive[] = {0,0,0,1};
+specular[] = {0,0,0,1};
+specularPower = 0;
+renderFlags[] = {"NoZWrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

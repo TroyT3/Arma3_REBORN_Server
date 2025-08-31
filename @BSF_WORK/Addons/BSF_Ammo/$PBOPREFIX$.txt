@@ -1,0 +1,6 @@
+//<'BSF_Ammo.pbo' properties via Mikero's dos tools, dll version 9.36>
+prefix=BSF_Community_Addon\addons\BSF_Ammo;
+Mikero=DePbo.dll.9.36;
+version=23062714;
+//PboType=Arma Addon;
+//</properties>

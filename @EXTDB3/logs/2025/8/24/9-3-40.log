@@ -1,0 +1,29 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 32 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[09:03:41:384198 -07:00] [Thread 14540] extDB3: Locked
+[09:04:04:619467 -07:00] [Thread 52996] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF4' for key 'PRIMARY'
+[09:04:04:619492 -07:00] [Thread 52996] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF4:1:["rhs_mag_30Rnd_556x45_M855_PMAG_Tan"]:1750:BSF_Server
+[09:04:04:619692 -07:00] [Thread 52996] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF5' for key 'PRIMARY'
+[09:04:04:619705 -07:00] [Thread 52996] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF5:1:["rhsusf_mag_40Rnd_46x30_FMJ"]:3750:BSF_Server
+[09:04:04:620157 -07:00] [Thread 52996] extDB3: SQL: Error MariaDBStatementException1: Deadlock found when trying to get lock; try restarting transaction
+[09:04:04:620164 -07:00] [Thread 52996] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF6:1:["rhs_10Rnd_762x39mm_U"]:3750:BSF_Server

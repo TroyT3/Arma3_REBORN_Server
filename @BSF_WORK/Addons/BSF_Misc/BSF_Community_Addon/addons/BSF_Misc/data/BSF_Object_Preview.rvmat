@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: data\BSF_Object_Preview.rvmat
+//Produced from mikero's Dos Tools Dll version 9.98
+//https://mikero.bytex.digital/Downloads
+//'now' is Wed Jul 09 20:03:33 2025 : 'file' last modified on Sat Jul 05 11:43:12 2025
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+mainLight = "Sun";
+FogMode = "Fog";
+Ambient[] = {0.6,0.6,0.6,1};
+Diffuse[] = {0.6,0.6,0.6,1};
+Emmisive[] = {0,0,0,1};
+ForcedDiffuse[] = {0,0,0,1};
+Specular[] = {0,0,0,1};
+SpecularPower = 0;
+PixelShaderId = "Normal";
+VertexShaderId = "Basic";
+renderFlags[] = {"NoZWrite"};
+class TegGen0
+{
+	uvSource = "None";
+};

@@ -1,0 +1,6 @@
+"BSF_Plate_Carrier_GL_Winter",
+"BSF_Plate_Carrier_GL_Multi01",
+"BSF_Plate_Carrier_GL_Multi02",
+"BSF_Plate_Carrier_GL_Arid",
+"BSF_Plate_Carrier_GL_Tiger",
+"BSF_Plate_Carrier_GL_Carbon",

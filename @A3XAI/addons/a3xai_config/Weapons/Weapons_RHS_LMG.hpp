@@ -1,0 +1,18 @@
+//"RHS Light Machine Guns"
+
+"rhs_weap_m27iar",
+"rhs_weap_m27iar_grip",
+"rhs_weap_mg42",
+"rhs_weap_m84",
+"rhs_weap_minimi_para_railed",
+"rhs_weap_m249",
+"rhs_weap_m249_pip_S_para",
+"rhs_weap_m249_pip_S_vfg",
+"rhs_weap_m249_pip",
+"rhs_weap_m249_pip_L_para",
+"rhs_weap_m249_pip_L_vfg",
+"rhs_weap_m240B",
+"rhs_weap_m240B_CAP",
+"rhs_weap_m240G",
+"rhs_weap_pkm",
+"rhs_weap_pkp",

@@ -1,0 +1,33 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 32 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[19:27:04:317042 -07:00] [Thread 43652] extDB3: Locked
+[19:27:27:280555 -07:00] [Thread 16040] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF2' for key 'PRIMARY'
+[19:27:27:280646 -07:00] [Thread 16040] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF2:1:["rhs_weap_m32"]:175000:BSF_Server
+[19:27:27:280755 -07:00] [Thread 51920] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF1' for key 'PRIMARY'
+[19:27:27:280808 -07:00] [Thread 51920] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF1:1:["rhs_fim92_mag"]:175000:BSF_Server
+[19:27:27:281022 -07:00] [Thread 52888] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF4' for key 'PRIMARY'
+[19:27:27:281051 -07:00] [Thread 52888] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF4:1:["rhs_100Rnd_762x54mmR"]:7500:BSF_Server
+[19:27:27:281151 -07:00] [Thread 16040] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF6' for key 'PRIMARY'
+[19:27:27:281170 -07:00] [Thread 16040] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF6:1:["rhs_mag_20Rnd_556x45_M200_Stanag"]:1250:BSF_Server
+[19:27:27:281394 -07:00] [Thread 51920] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF7' for key 'PRIMARY'
+[19:27:27:281422 -07:00] [Thread 51920] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF7:1:["rhs_18rnd_9x21mm_7BT3"]:750:BSF_Server

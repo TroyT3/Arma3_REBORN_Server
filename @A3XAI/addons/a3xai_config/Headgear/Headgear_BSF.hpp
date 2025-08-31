@@ -1,0 +1,16 @@
+"BSF_Viper_Helmet_black_F",
+"BSF_Viper_Helmet_Winter_F",
+
+"BSF_Helmet_1_Arid",
+"BSF_Helmet_1_Tiger",
+"BSF_Helmet_1_Multi2",
+"BSF_Helmet_2_Arid",
+"BSF_Helmet_2_Multi2",
+"BSF_Helmet_2_Tiger",
+
+"BSF_Stealth_Helmet_Carbon",
+"BSF_Stealth_Helmet_Multi2",
+"BSF_Stealth_Helmet_Arid",
+"BSF_Stealth_Helmet_Tiger",
+"BSF_Stealth_Helmet_Winter",
+"BSF_Stealth_Helmet_Police",

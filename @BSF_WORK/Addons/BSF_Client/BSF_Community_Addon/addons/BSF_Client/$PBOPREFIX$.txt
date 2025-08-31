@@ -1,0 +1,6 @@
+//<'BSF_Client.pbo' properties via Mikero's dos tools, dll version 9.98>
+prefix=BSF_Community_Addon\addons\BSF_Client;
+Mikero=DePbo.dll.9.98;
+version=25062722;
+//PboType=Arma Addon;
+//</properties>

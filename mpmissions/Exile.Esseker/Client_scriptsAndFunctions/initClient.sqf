@@ -1,0 +1,40 @@
+// initClient.sqf
+
+player setVariable ["JohnO_isBeingHunted",false];
+
+lastCommsHack = time;
+lastCommsHack_coolDown = 300;
+//lastCommsHack_coolDown = 5;	// BSF For debug purposes
+ExileReborn_lastHealingReward = time;
+ExileReborn_healingCoolDown = 180;
+ExileReborn_lastHeartBeat = time;
+ExileReborn_heartBeatInterval = 10;
+ExileRebornClient_CustomHit_soundIsPlaying = false;
+
+ExileReborn_userActionTimeout = 30;
+ExileReborn_userActionTimeout_lastCheck = time;
+ExileReborn_userActionArray = [];
+ExileReborn_userActions = [];
+
+ExileReborn_lastWoundUpdate = time;
+ExileReborn_chanceForInfection = 30; 				// When wounded, chance to become infected
+ExileReborn_woundCheckInterval = 300;				// How often infection is handled
+
+ExileReborn_stageOneInfection = 30;					// Infection value to reach stage one -- increments by + 1 per every ExileReborn_woundCheckInterval
+ExileReborn_stageTwoInfection = 60;					// Infection value stage 2
+ExileReborn_stageThreeInfection = 90;				// Infection value stage 3
+ExileReborn_StatsUpdateInterval = 1800;             // Write infection data to DB
+
+[] execVM "Client_scriptsAndFunctions\Scripts\displayRespectInformation.sqf";
+[] execVM "Client_scriptsAndFunctions\Scripts\JohnO_script_adjustPlayerStatsDecay.sqf";
+[] execVM "Client_scriptsAndFunctions\Scripts\JohnO_script_createPlayerActions.sqf";
+[] execVM "Client_scriptsAndFunctions\Scripts\JohnO_script_createHints.sqf";
+
+[180, JohnO_fnc_headHunterWarning, [], true] call ExileClient_system_thread_addtask;
+[240, JohnO_fnc_temperatureStatsUpdate, [], true] call ExileClient_system_thread_addtask;
+[5, JohnO_fnc_handleCustomEffects, [], true] call ExileClient_system_thread_addtask;
+[600, JohnO_fnc_handleSurvivorSpawns, [], true] call ExileClient_system_thread_addtask;
+[2, JohnO_fnc_handlePlayerActions, [], true] call ExileClient_system_thread_addtask;
+[600, JohnO_fnc_displayHints, [], true] call ExileClient_system_thread_addtask;
+[180, JohnO_fnc_handleDeadAnimalWarmth, [], true] call ExileClient_system_thread_addtask;
+

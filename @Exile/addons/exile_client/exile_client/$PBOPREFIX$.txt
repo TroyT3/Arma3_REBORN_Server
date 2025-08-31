@@ -1,0 +1,6 @@
+//<'exile_client.pbo' properties via Mikero's dos tools, dll version 9.36>
+prefix=exile_client;
+Mikero=DePbo.dll;
+version=00000000;
+//PboType=Arma Addon;
+//</properties>

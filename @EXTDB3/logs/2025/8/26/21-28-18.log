@@ -1,0 +1,27 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 32 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[21:28:19:631155 -07:00] [Thread 56236] extDB3: Locked
+[21:28:44:855481 -07:00] [Thread 53668] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF2' for key 'PRIMARY'
+[21:28:44:855490 -07:00] [Thread 94852] extDB3: SQL: Error MariaDBStatementException1: Duplicate entry 'BSF3' for key 'PRIMARY'
+[21:28:44:855522 -07:00] [Thread 53668] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF2:1:["100Rnd_580x42_Mag_F"]:7500:BSF_Server
+[21:28:44:855535 -07:00] [Thread 94852] extDB3: SQL: Error MariaDBStatementException1: Input: createNewListing:BSF3:1:["rhs_10Rnd_762x39mm"]:3750:BSF_Server

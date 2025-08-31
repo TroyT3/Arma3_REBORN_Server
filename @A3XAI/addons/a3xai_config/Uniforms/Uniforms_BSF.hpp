@@ -1,0 +1,5 @@
+"BSF_Viper_Black",
+"BSF_Viper_Winter",
+"BSF_Combat_Uniform_1_Arid",
+"BSF_Combat_Uniform_1_Tiger",
+"BSF_Combat_Uniform_1_Multi2",

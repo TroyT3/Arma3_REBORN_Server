@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: model\Exile_ZoneMarker_Green.rvmat
+//Produced from mikero's Dos Tools Dll version 9.36
+//https://mikero.bytex.digital/Downloads
+//'now' is Tue Feb 27 09:30:40 2024 : 'file' last modified on Sun Mar 04 11:17:45 2018
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1.0,1.0,1.0,1.0};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {1.0,1.0,1.0,1.0};
+emmisive[] = {500.0,500.0,500.0,5.0};
+specular[] = {0.0,0.0,0.0,1.0};
+specularPower = 0.0;
+renderFlags[] = {"AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

@@ -1,0 +1,6 @@
+//<'exile_assets.pbo' properties via Mikero's dos tools, dll version 9.36>
+prefix=exile_assets;
+Mikero=DePbo.dll.6.54;
+version=18030414;
+//PboType=Arma Addon;
+//</properties>

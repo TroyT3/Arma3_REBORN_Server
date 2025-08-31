@@ -1,0 +1,16 @@
+// Include shit in here
+
+/*
+include map content.
+Call compile preprocess'ing them is MUCH better. 
+Creating spawn/execvm's IS BAD unless the script is a long running one.
+If you try call compile and it all goes to shit, use execvm =P
+*/
+
+diag_log "Starting Custom Content PBO";
+
+[] execVM "a3_custom\mapcontent\Radio_Towers.sqf";
+[] execVM "a3_custom\mapcontent\All_Objects.sqf";
+[] execVM "a3_custom\mapcontent\Lower_Esseker_Bridge.sqf";
+
+
