@@ -1,0 +1,61 @@
+# Ignore everything by default
+/*
+
+# ───────────────
+# ✅ Include only these (whitelist)
+!/!!_ESSEKER/
+!/@A3XAI/
+!/@A3XAI/addons/
+!/@BSF_WORK/
+!/@BSF_WORK/addons/
+!/@Exile/
+!/@Exile/addons/
+/@Exile/addons/*          # close everything under addons
+!/@Exile/addons/exile_client/
+!/@ExileServer/
+!/@ExileServer/addons/
+!/@ExileServer/addons/a3_custom/
+!/@ExileServer/addons/a3_exile_occupation/
+!/@ExileServer/addons/BigfootsShipwrecks/
+!/@ExileServer/addons/BSF_Server/
+!/@ExileServer/addons/DMS/
+!/@ExileServer/addons/exad_dv/
+!/@ExileServer/addons/exile_server/
+!/@ExileServer/addons/exile_server_config/
+!/@ExileServer/addons/JohnOs_events/
+!/@ExileServer/addons/SM_Zombz_Code/
+!/@EXTDB3/
+!/@infiSTAR_Exile/
+!/@infiSTAR_Exile/addons/
+/@infiSTAR_Exile/addons/* # close everything under addons
+!/@infiSTAR_Exile/addons/a3_infiSTAR_Exile/
+!/@infiSTAR_Exile/addons/infiSTAR_TM/
+!/A3Master/
+!/battleye/
+!/keys/
+!/mpmissions/
+/mpmissions/*             # close everything under mpmissions
+!/mpmissions/Exile.Esseker/
+
+# ───────────────
+# 🚫 Ignore file types you don't want tracked, even inside whitelisted dirs
+*.pbo
+*.bikey
+# *.log
+# *.rpt
+*.mdmp
+*.bidmp
+*.tmp
+*.bak
+*.paa
+*.ogg
+*.jpg
+*.jpeg
+*.png
+
+# ───────────────
+# 🚫 Ignore misc/IDE/editor files
+.vscode/
+.sublime-workspace
+.sublime-project
+*.code-workspace
