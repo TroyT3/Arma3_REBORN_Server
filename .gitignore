@@ -43,10 +43,13 @@
 /@BSF_WORK/addons/BSF_Misc/
 /@Exile/addons/exile_assets/
 /@ExileServer/addons/!A Backups/
+/mpmissions/BACKUPS/
+/mpmissions/Scripts/
+
 
 # git rm -r --cached "path\to\folder"
 
-
+# git rm -r --cached "mpmissions/BACKUPS"
 
 # ───────────────
 # 🚫 Ignore file types you don't want tracked, even inside whitelisted dirs
