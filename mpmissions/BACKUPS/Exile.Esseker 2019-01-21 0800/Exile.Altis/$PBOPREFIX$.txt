@@ -1,4 +1,0 @@
-//<'Exile.Esseker 2019-01-21 0800.pbo' properties via Mikero's dos tools, dll version 9.98>
-prefix=Exile.Altis;
-//PboType=Arma Mission Addon;
-//</properties>

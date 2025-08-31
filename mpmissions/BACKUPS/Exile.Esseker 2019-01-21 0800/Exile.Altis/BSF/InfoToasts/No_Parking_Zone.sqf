@@ -1,1 +1,0 @@
-["InfoTitleAndText", ["NO PARKING ZONE", "You have entered a NO PARKING ZONE!!! Get your vehicle out of here before restart or there may be consequences!!!"]] call ExileClient_gui_toaster_addTemplateToast;

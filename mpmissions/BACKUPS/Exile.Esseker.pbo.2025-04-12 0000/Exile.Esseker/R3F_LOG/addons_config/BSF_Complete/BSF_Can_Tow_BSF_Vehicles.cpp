@@ -1,5 +1,0 @@
-"BSF_B_Truck_01_ammo_F",
-"BSF_B_Truck_01_box_F",
-"BSF_B_Truck_01_fuel_F",
-"BSF_B_Truck_01_mover_F",
-"BSF_B_Truck_01_repair_F",

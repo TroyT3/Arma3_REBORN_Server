@@ -1,1 +1,0 @@
-["InfoTitleAndText", ["PVP Zone", "You have entered a PVP zone!!!  You may now be killed without consequence!"]] call ExileClient_gui_toaster_addTemplateToast;
