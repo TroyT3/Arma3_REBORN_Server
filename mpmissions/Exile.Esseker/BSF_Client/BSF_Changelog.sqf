@@ -5,22 +5,36 @@
 
 /*
 TO DO 2025-08-18
-Fix ExileClient_object_player_event_onHandleDamage
-Berry scavenging working?
+
 Fix  8:50:28 File BSF_Community_Addon\addons\BSF_Client\code\fnc_BSF_ShowScanner.sqf..., line 14  - Error Suspending not allowed in this context
-Finish ExileServer_BSF_network_UpdateRebornStatsRequest
 Add duping bipods to blacklist?
+Check roaming vehicle map center mechanic
 
 Fix:
-     8:44:21 Error in expression <enter") select [0,2];
-    _logic = "logic" createVehicleLocal CenterLogicLocation;
-     8:44:21   Error position: <createVehicleLocal CenterLogicLocation;
-     8:44:21   Error 0 elements provided, 3 expected
-     8:44:21 File JohnOs_events\addons\Events\events_config.sqf..., line 232
 
 
+    19:29:48 Error in expression <etText (_menuItem >> "condition"));
+    if (_showMenuItem) then
+    {
+    private _icon = ge>
+    19:29:48   Error position: <_showMenuItem) then
+    {
+    private _icon = ge>
+    19:29:48   Error Undefined variable in expression: _showmenuitem
+    19:29:48 File mpmissions\__CUR_MP.Esseker\SM\DynamicMenu\overrides\ExileClient_gui_interactionMenu_hook.sqf..., line 86
+
+ALTER TABLE `account`
+    DROP COLUMN `reborn_evr_res`;
 
 
+    22:38:49 Error in expression <abase_query_selectSingle;
+    if ((typeName _cargoContainers) isEqualTo "ARRAY") the>
+    22:38:49   Error position: <_cargoContainers) isEqualTo "ARRAY") the>
+    22:38:49   Error Undefined variable in expression: _cargocontainers
+    22:38:49 File mpmissions\Exile.Esseker\Overrides\ExileServer_object_vehicle_database_load.sqf..., line 116
+
+ 9:06:58 Warning, config 'BSF_Community_Addon\addons\BSF_Signs\config.bin' contained invalid CfgPatches entry with extra required Addon 'a3_signs_f'. Invalid CfgPatches entries are invalid. A temporary workaround is being applied, this mod will soon stop working
+ 9:06:58 Warning, config 'BSF_Community_Addon\addons\BSF_Signs\config.bin' contained invalid CfgPatches entry with extra required Addon 'a3_structures_f_argo'. Invalid CfgPatches entries are invalid. A temporary workaround is being applied, this mod will soon stop working
 
 */
 [
@@ -37,8 +51,8 @@ Fix:
     REBORN: <br/>    
     • Wild-spawned vehicles will now be deleted 2 weeks after spawning.  This will allow more time for players to claim them.<br/>    
     • During an EVR event, nearby AI and Zombies will be killed, preventing an attack while incapacitated.<br/>    
-    • <br/>    
-    • <br/>    
+    • Re-wrote the infection and damage handling system. Stats will now be saved in the DB and be persistent.<br/>    
+    • Fixed the 'Scavenge Wheel' mechanic to reflect actual number of wheels on a vehicle.<br/>    
     • <br/>    
     ",
 
