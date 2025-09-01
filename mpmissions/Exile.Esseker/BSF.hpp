@@ -23,14 +23,12 @@ allowFunctionsRecompile = 0;
 #include "MarXet\dialog\RscMarXetDialog.hpp"
 
 #include "xs\spawn\Dialog\xsSpawnDefines.hpp"
-#include "xs\spawn\Dialog\xsSpawnDiaglog.hpp"
+#include "xs\spawn\Dialog\xsSpawnDialog.hpp"
 
 #include "SM\TraderPlus\SM_TraderPlus.hpp"
 #include "SM\DynamicMenu\RscSMDynMenu.hpp"
 #include "SM\LoadoutTrader\SM_LoadoutTrader.hpp"
 #include "SM\LoneVirtualGarage\config.hpp"
-
-#include "ExAdClient\ExAd.cpp"
 
 class CfgRemoteExec
 {

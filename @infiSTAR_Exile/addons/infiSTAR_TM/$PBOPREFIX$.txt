@@ -1,0 +1,4 @@
+//<'infiSTAR_TM.pbo' properties via Mikero's dos tools, dll version 9.98>
+prefix=infiSTAR_TM;
+//PboType=Arma Addon;
+//</properties>
