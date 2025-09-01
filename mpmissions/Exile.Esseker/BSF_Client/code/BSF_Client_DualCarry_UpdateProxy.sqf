@@ -1,5 +1,5 @@
 /*
-* BSF_Client_DualArms_UpdateProxy
+* BSF_Client_DualCarry_UpdateProxy
 *
 * BS-Free Game Servers
 * www.bs-free.com

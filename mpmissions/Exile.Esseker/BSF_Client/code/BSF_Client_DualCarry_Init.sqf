@@ -1,5 +1,5 @@
 /*
-* BSF_Client_DualArms_Init
+* BSF_Client_DualCarry_Init
 *
 * BS-Free Game Servers
 * www.bs-free.com
@@ -19,7 +19,7 @@ if (isNil {missionNamespace getVariable "BSF_DA_respawnEH"}) then
 {
     missionNamespace setVariable [
         "BSF_DA_respawnEH",
-        addMissionEventHandler ["PlayerRespawn", { [] spawn BSF_Client_DualArms_Init; }]
+        addMissionEventHandler ["PlayerRespawn", { [] spawn BSF_Client_DualCarry_Init; }]
     ];
 };
 
@@ -30,7 +30,7 @@ if (player getVariable ["BSF_DA_actionsAdded", false]) exitWith { true };
 // Sling primary
 player addAction [
     "Sling Primary (Dual Arms)",
-    { [] call BSF_Client_DualArms_StorePrimary; },
+    { [] call BSF_Client_DualCarry_StorePrimary; },
     [], 1.5, false, true, "",
     "(primaryWeapon player) != '' && ((player getVariable ['BSF_DA_secondary', []]) isEqualTo []) && (vehicle player == player)"
 ];
@@ -38,7 +38,7 @@ player addAction [
 // Swap primary <-> secondary
 player addAction [
     "Swap Primary/Secondary (Dual Arms)",
-    { [] call BSF_Client_DualArms_Swap; },
+    { [] call BSF_Client_DualCarry_Swap; },
     [], 1.5, false, true, "",
     "!((player getVariable ['BSF_DA_secondary', []]) isEqualTo []) && (vehicle player == player)"
 ];
@@ -46,7 +46,7 @@ player addAction [
 // Drop slung weapon
 player addAction [
     "Drop Slung Weapon (Dual Arms)",
-    { [] call BSF_Client_DualArms_RemoveSecondary; },
+    { [] call BSF_Client_DualCarry_RemoveSecondary; },
     [], 1.5, false, true, "",
     "!((player getVariable ['BSF_DA_secondary', []]) isEqualTo [])"
 ];
@@ -72,10 +72,10 @@ player addEventHandler [
 ];
 
 // ensure visual matches state on init
-if (isNil {missionNamespace getVariable 'BSF_Client_DualArms_UpdateProxy'}) then {
-    missionNamespace setVariable ['BSF_Client_DualArms_UpdateProxy', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualArms_UpdateProxy.sqf')];
+if (isNil {missionNamespace getVariable 'BSF_Client_DualCarry_UpdateProxy'}) then {
+    missionNamespace setVariable ['BSF_Client_DualCarry_UpdateProxy', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualCarry_UpdateProxy.sqf')];
 };
-[] call BSF_Client_DualArms_UpdateProxy;
+[] call BSF_Client_DualCarry_UpdateProxy;
 
 // Add vehicle visibility handlers once
 if (isNil {player getVariable "BSF_DA_ehIn"}) then {

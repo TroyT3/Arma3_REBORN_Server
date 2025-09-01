@@ -1,19 +1,19 @@
 missionNamespace setVariable ["ExileClientXM8IsPowerOn",true];
 
-// BSF DualArms trying to get player initialization working
+// BSF DualCarry trying to get player initialization working
 
-// [] spawn BSF_Client_DualArms_WorldProxyUpdater;
-// [] spawn BSF_Client_DualArms_Init;
+// [] spawn BSF_Client_DualCarry_WorldProxyUpdater;
+// [] spawn BSF_Client_DualCarry_Init;
 
 [] spawn { 
     waitUntil { !isNull player && {player == player} && {time > 0} }; 
-    [] call BSF_Client_DualArms_Init; 
+    [] call BSF_Client_DualCarry_Init; 
 };
 
-// [] execVM "BSF_Client\code\BSF_Client_DualArms_Init.sqf";
-[] execVM "BSF_Client\code\BSF_Client_DualArms_WorldProxyUpdater.sqf";
+// [] execVM "BSF_Client\code\BSF_Client_DualCarry_Init.sqf";
+[] execVM "BSF_Client\code\BSF_Client_DualCarry_WorldProxyUpdater.sqf";
 
-// END BSF DualArms trying to get player initialization working
+// END BSF DualCarry trying to get player initialization working
 
 
 

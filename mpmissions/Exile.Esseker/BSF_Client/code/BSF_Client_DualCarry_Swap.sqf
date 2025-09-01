@@ -1,5 +1,5 @@
 /*
-* BSF_Client_DualArms_Swap
+* BSF_Client_DualCarry_Swap
 *
 * BS-Free Game Servers
 * www.bs-free.com
@@ -28,9 +28,9 @@ _player setUnitLoadout _ld;
 systemChat "Swapped primary and slung weapon.";
 
 // update visual proxy
-if (isNil {missionNamespace getVariable 'BSF_Client_DualArms_UpdateProxy'}) then {
-    missionNamespace setVariable ['BSF_Client_DualArms_UpdateProxy', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualArms_UpdateProxy.sqf')];
+if (isNil {missionNamespace getVariable 'BSF_Client_DualCarry_UpdateProxy'}) then {
+    missionNamespace setVariable ['BSF_Client_DualCarry_UpdateProxy', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualCarry_UpdateProxy.sqf')];
 };
-[] call BSF_Client_DualArms_UpdateProxy;
+[] call BSF_Client_DualCarry_UpdateProxy;
 
 true

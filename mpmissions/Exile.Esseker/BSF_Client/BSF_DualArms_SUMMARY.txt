@@ -8,29 +8,29 @@ Overview
 
 Key Integration Points
 - Key handler: Overrides/ExileClient_gui_hud_event_onKeyDown.sqf handles actionKeys "User6".
-- Bootstrap: BSF_Client/bootstrap/fn_postInit.sqf compiles and spawns DualArms code.
-  - Spawns: BSF_Client_DualArms_Init and BSF_Client_DualArms_WorldProxyUpdater.
+- Bootstrap: BSF_Client/bootstrap/fn_postInit.sqf compiles and spawns DualCarry code.
+  - Spawns: BSF_Client_DualCarry_Init and BSF_Client_DualCarry_WorldProxyUpdater.
 - All created files use the requested © 2025 header style.
 
 Created Files
-- BSF_Client/code/BSF_Client_DualArms_Init.sqf
+- BSF_Client/code/BSF_Client_DualCarry_Init.sqf
   - Adds actions, death cleanup, respawn re-init, vehicle visibility handlers, and initial proxy sync.
-- BSF_Client/code/BSF_Client_DualArms_StorePrimary.sqf
+- BSF_Client/code/BSF_Client_DualCarry_StorePrimary.sqf
   - Moves current primary from unit loadout to a slung slot (player variable) and updates proxy. Public variable for sync.
-- BSF_Client/code/BSF_Client_DualArms_Swap.sqf
+- BSF_Client/code/BSF_Client_DualCarry_Swap.sqf
   - Swaps primary <-> slung in unit loadout and updates proxy. Public variable for sync.
-- BSF_Client/code/BSF_Client_DualArms_RemoveSecondary.sqf
+- BSF_Client/code/BSF_Client_DualCarry_RemoveSecondary.sqf
   - Drops slung weapon to ground, clears state, and removes proxy. Public variable for sync.
-- BSF_Client/code/BSF_Client_DualArms_UpdateProxy.sqf
+- BSF_Client/code/BSF_Client_DualCarry_UpdateProxy.sqf
   - Creates/attaches the on-back proxy for the local player; used after store/swap/remove and on init.
-- BSF_Client/code/BSF_Client_DualArms_WorldProxyUpdater.sqf
+- BSF_Client/code/BSF_Client_DualCarry_WorldProxyUpdater.sqf
   - 1s loop that maintains on-back proxies for all other players based on their public slung state.
 
 Existing Files Changed
 - Overrides/ExileClient_gui_hud_event_onKeyDown.sqf
   - Adds handling for actionKeys "User6" to toggle sling/swap (compiles functions on demand if needed).
 - BSF_Client/bootstrap/fn_postInit.sqf
-  - Compiles all DualArms functions and spawns Init + WorldProxyUpdater.
+  - Compiles all DualCarry functions and spawns Init + WorldProxyUpdater.
 
 Runtime Behavior
 - Sling: Stores full primary weapon loadout array using getUnitLoadout/select 0 and clears primary with setUnitLoadout.
@@ -62,14 +62,14 @@ Testing Steps
 7) Have a second client observe your back model slung/un-slung.
 
 Open Items / Next Steps (optional)
-- Header hygiene: BSF_Client_DualArms_Init.sqf still has an older 2023 header a few lines below the new 2025 header. We can remove the older block for consistency.
+- Header hygiene: BSF_Client_DualCarry_Init.sqf still has an older 2023 header a few lines below the new 2025 header. We can remove the older block for consistency.
 - Back placement: Adjust offsets/rotation for better visual alignment across weapon families.
 - Drop with attachments: Extend the drop action to spawn optics, muzzle devices, pointers, magazines from the slung array.
 - Keybind UX: Add a brief HUD hint when User6 toggles sling/swap, and/or allow binding through a small in-mission settings dialog.
 - Safezone rules: If you want to restrict sling/swap in safezones, add checks to the action conditions and key handler.
 
 Rollback
-- Remove the DualArms_* .sqf files from BSF_Client/code.
+- Remove the DualCarry_* .sqf files from BSF_Client/code.
 - Revert the additions in BSF_Client/bootstrap/fn_postInit.sqf.
 - Revert the actionKeys "User6" block in Overrides/ExileClient_gui_hud_event_onKeyDown.sqf.
 

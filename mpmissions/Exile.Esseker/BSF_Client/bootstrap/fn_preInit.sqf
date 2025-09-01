@@ -19,12 +19,12 @@ private ['_code', '_function', '_file'];
 }
 forEach 
 [
-	['BSF_Client_DualArms_Init','BSF_Client\code\BSF_Client_DualArms_Init.sqf'],
-	['BSF_Client_DualArms_StorePrimary','BSF_Client\code\BSF_Client_DualArms_StorePrimary.sqf'],
-	['BSF_Client_DualArms_Swap','BSF_Client\code\BSF_Client_DualArms_Swap.sqf'],
-	['BSF_Client_DualArms_RemoveSecondary','BSF_Client\code\BSF_Client_DualArms_RemoveSecondary.sqf'],
-	['BSF_Client_DualArms_UpdateProxy','BSF_Client\code\BSF_Client_DualArms_UpdateProxy.sqf'],
-	['BSF_Client_DualArms_WorldProxyUpdater','BSF_Client\code\BSF_Client_DualArms_WorldProxyUpdater.sqf'],
+	['BSF_Client_DualCarry_Init','BSF_Client\code\BSF_Client_DualCarry_Init.sqf'],
+	['BSF_Client_DualCarry_StorePrimary','BSF_Client\code\BSF_Client_DualCarry_StorePrimary.sqf'],
+	['BSF_Client_DualCarry_Swap','BSF_Client\code\BSF_Client_DualCarry_Swap.sqf'],
+	['BSF_Client_DualCarry_RemoveSecondary','BSF_Client\code\BSF_Client_DualCarry_RemoveSecondary.sqf'],
+	['BSF_Client_DualCarry_UpdateProxy','BSF_Client\code\BSF_Client_DualCarry_UpdateProxy.sqf'],
+	['BSF_Client_DualCarry_WorldProxyUpdater','BSF_Client\code\BSF_Client_DualCarry_WorldProxyUpdater.sqf'],
 
 	['BSF_Client_GetVehicleWheels','BSF_Client\code\BSF_Client_GetVehicleWheels.sqf'],
 	['BSF_Client_Update_Reborn_Stats','BSF_Client\code\BSF_Client_Update_Reborn_Stats.sqf'],

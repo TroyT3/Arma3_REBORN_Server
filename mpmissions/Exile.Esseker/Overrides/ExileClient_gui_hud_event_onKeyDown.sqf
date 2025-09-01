@@ -53,14 +53,14 @@ if (_keyCode in (actionKeys "User6")) exitWith
     if (!dialog && alive player && {vehicle player == player}) then
     {
         // Compile on demand if not present (safety for hot-reload)
-        if (isNil {missionNamespace getVariable 'BSF_Client_DualArms_StorePrimary'}) then {
-            missionNamespace setVariable ['BSF_Client_DualArms_StorePrimary', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualArms_StorePrimary.sqf')];
+        if (isNil {missionNamespace getVariable 'BSF_Client_DualCarry_StorePrimary'}) then {
+            missionNamespace setVariable ['BSF_Client_DualCarry_StorePrimary', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualCarry_StorePrimary.sqf')];
         };
-        if (isNil {missionNamespace getVariable 'BSF_Client_DualArms_Swap'}) then {
-            missionNamespace setVariable ['BSF_Client_DualArms_Swap', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualArms_Swap.sqf')];
+        if (isNil {missionNamespace getVariable 'BSF_Client_DualCarry_Swap'}) then {
+            missionNamespace setVariable ['BSF_Client_DualCarry_Swap', compileFinal (preprocessFileLineNumbers 'BSF_Client\\code\\BSF_Client_DualCarry_Swap.sqf')];
         };
         private _hasSlung = !((player getVariable ['BSF_DA_secondary', []]) isEqualTo []);
-        if (_hasSlung) then { [] call BSF_Client_DualArms_Swap; } else { [] call BSF_Client_DualArms_StorePrimary; };
+        if (_hasSlung) then { [] call BSF_Client_DualCarry_Swap; } else { [] call BSF_Client_DualCarry_StorePrimary; };
     };
     true
 };
