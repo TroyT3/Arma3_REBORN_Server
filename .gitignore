@@ -43,9 +43,17 @@
 /mpmissions/BACKUPS/
 /mpmissions/Scripts/
 
+/@EXTDB3/extdb3-conf.ini
+/@ExileServer/exileconfig.cfg
 
-# git rm -r --cached "@BSF_WORK/Addons/BSF_Client/BSF_Community_Addon/addons/BSF_Client"
 
+# git rm -r --cached "@infiSTAR_Exile"
+# git commit -m "Stop tracking @infiSTAR_Exile"
+# git push
+
+# git rm --cached "@EXTDB3/extdb3-conf.ini"
+# git commit -m "Stop tracking extdb3-conf.ini"
+# git push
 
 # ───────────────
 # 🚫 Ignore file types you don't want tracked, even inside whitelisted dirs
