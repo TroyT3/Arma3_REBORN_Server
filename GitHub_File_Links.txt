@@ -1177,6 +1177,19 @@ https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40
 https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server/code/ExileServer_world_spawnVehicles.sqf
 END Exile Server Addon Files
 
+START Exile Server Config Addon Files
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	$PBOPREFIX$.txt
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	$PREFIX$
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	BSF_Supply_Boxes.cpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	CfgBuildings.hpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	CfgBuildings_Chernarus_Esseker.hpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	CfgBuildings_Contact.hpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	CfgExileEscapeLootServer.hpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	CfgExileLootServer.hpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	config.cpp
+https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/exile_server_config/	USED_ON_ESSEKER-CHERNARUS.txt
+END Exile Server Config Addon Files
+
 START BSF Server Addon Files
 https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/BSF_Server/BSF_Server.hpp
 https://raw.githubusercontent.com/TroyT3/Arma3_REBORN_Server/refs/heads/main/%40ExileServer/addons/BSF_Server/BSF_Server_Config.sqf
